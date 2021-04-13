@@ -1,0 +1,23 @@
+<html>
+    <head>
+		<title>Declarative Rendering</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            {{ message }}
+        </div>
+
+        <!-- 엘리먼트(element) 속성에도 바인딩이 가능 -->
+        <!-- v-bind의 속성은 디렉티브(directive) -->
+        <div id="app-2">
+            <span v-bind:title="message">
+                Hover your mouse over me for a few seconds to see my dynamically bound title!
+            </span>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
