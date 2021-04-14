@@ -1,0 +1,24 @@
+<html>
+    <head>
+		<title>Declarative Rendering</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="app-5">
+            <p>{{ message }}</p>
+            <!-- v-on 디렉티브를 사용하여 Vue 인스터스에 메소드 호출이 가능  -->
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+
+        <div id="app-6">
+            <p>{{ message }}</p>
+            <!-- v-model 디렉티브는 양식에 대한 입력과 앱 상태를 양방향으로 바인딩이 가능  -->
+            <input v-model="message">
+            <input v-model="message01">
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
