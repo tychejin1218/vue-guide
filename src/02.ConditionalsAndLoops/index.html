@@ -1,0 +1,28 @@
+<html>
+    <head>
+		<title>Declarative Rendering</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="app-3">
+            <span>
+                <!-- 콘솔에서 app3.seen = false를 입력하면, 메시지가 사라짐  -->
+                <!-- 텍스트, 엘리먼트쁜 아니라 DOM의 구조에도 데이터 바인딩 가능 -->
+                <span v-if="seen">Now you see me</span>
+            </span>
+        </div>
+
+        <div id="app-4">
+            <ol>
+                <!-- 콘솔에서 app4.todos.push({ text: 'New item' })을 입력하면 목록이 추가됨 -->
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ol>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

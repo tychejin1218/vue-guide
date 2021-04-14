@@ -19,6 +19,14 @@
       "port": 9277,
       "webRoot": "${workspaceFolder}",
       "url": "http://127.0.0.1:49905/p/vue-guide/src/declarativeRendering/index.html?_cmAuth\u003ddwgndblcsg"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (2)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9238,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:49905/p/vue-guide/src/02.ConditionalsAndLoops/index.html?_cmAuth\u003ddwgndblcsg"
     }
   ]
 }
