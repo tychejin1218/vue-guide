@@ -1,0 +1,26 @@
+<html>
+    <head>
+		<title>Declarative Rendering</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <ul>
+                <li>{{ msg }}</li>
+                <!-- 데이터 변경 시 업데이트를 하지 않기 위해서는  v-once 디렉티브를 사용 -->
+                <li v-once>{{ msg }}</li>
+            </ul>
+            
+            <ul>
+                <!-- Raw HTML  -->
+                <li>Using mustaches: {{ rawHtml }}</li>
+                <!-- HTML을 출력하려면 v-html 디렉티브를 사용  -->
+                <li>Using v-html directive: <span v-html="rawHtml"></span></li>
+            </ul>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
