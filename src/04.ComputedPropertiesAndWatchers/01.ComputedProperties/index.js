@@ -1,4 +1,4 @@
-var vm = new Vue({ 
+var vm01 = new Vue({ 
     el: '#example01',
     data: {
         message: 'Hello'
@@ -12,7 +12,7 @@ var vm = new Vue({
     }
 });
 
-var vm01 = new Vue({ 
+var vm02 = new Vue({ 
     el: '#example02',
     data: {
         message: 'Hello'
@@ -30,7 +30,7 @@ var vm01 = new Vue({
     }
 });
 
-var vm02 = new Vue({ 
+var vm03 = new Vue({ 
     el: '#example03',
     data: {
         firstName: 'Foo',
@@ -47,7 +47,7 @@ var vm02 = new Vue({
     }
 });
 
-var vm03 = new Vue({ 
+var vm04 = new Vue({ 
     el: '#example04',
     data: {
         firstName: 'Foo',
@@ -56,6 +56,28 @@ var vm03 = new Vue({
     computed: {
         fullName: function() {
             return this.firstName + ' ' + this.lastName
+        }
+    }
+});
+
+var vm05 = new Vue({ 
+    el: '#example05',
+    data: {
+        firstName: 'Foo',
+        lastName: 'Bar'
+    },
+    computed: {
+        fullName: {
+            // getter
+            get: function() {
+                return this.firstName + ' ' + this.lastName
+            },
+            // setter
+            set: function(newValue) {
+                var names = newValue.split(' ');
+                this.firstName = names[0]
+                this.lastName = names[names.length -  1]
+            }
         }
     }
 });
