@@ -51,6 +51,14 @@
       "port": 9232,
       "webRoot": "${workspaceFolder}",
       "url": "http://127.0.0.1:49905/p/vue-guide/src/04.ComputedPropertiesAndWatchers/01.ComputedProperties/index.html?_cmAuth\u003ddwgndblcsg"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (6)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9208,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:49905/p/vue-guide/src/04.ComputedPropertiesAndWatchers/02.Watchers/index.html?_cmAuth\u003ddwgndblcsg"
     }
   ]
 }
