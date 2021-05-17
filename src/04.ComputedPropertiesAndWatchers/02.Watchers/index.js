@@ -19,7 +19,7 @@ var vm = new Vue({
         this.answer = 'Questions usually contain a question mark. ;-)'
         return
       }
-      this.answer = 'Thinking...'
+      this.answer = 'Thinking... test'
       var vm = this
       axios.get('https://yesno.wtf/api')
         .then(function (response) {
